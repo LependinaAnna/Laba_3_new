@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <locale.h>
+#include <stdio.h>
+int homework();
+int main()
+{
+    setlocale(LC_ALL, "RUS"); 
+    homework();
+    return 0;
+}
+int homework()
+{
+    int age;
+    int mounth;
+    int days;
+    printf("Введите количество лет\n");
+    scanf("%d", &age);
+    days = age * 365;
+    mounth = age * 12;
+    printf("Вам %d лет\nВам %d месяцев\nВам %d дней\n", age, mounth, days);
+    return 0;
+}
